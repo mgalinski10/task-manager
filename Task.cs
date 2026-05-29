@@ -24,4 +24,9 @@ public class Task
     {
         return $"Id: {Id}, Name: {Name}, Status: {Status}";
     }
+
+    public bool Equals(Task task)
+    {
+        return (Id.Equals(task.Id));
+    }
 }

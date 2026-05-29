@@ -9,5 +9,9 @@ class Program
         TaskService.GetAllTasks();
 
         TaskService.AddNewTask("Testowy task");
+        
+        TaskService.DeleteTask(2088704504);
+        
+        TaskService.ToggleTaskStatus(3);
     }
 }
