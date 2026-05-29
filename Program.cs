@@ -6,12 +6,13 @@ class Program
     
     static void Main(string[] args)
     {
-        TaskService.GetAllTasks();
+        // TaskService.GetAllTasks();
 
-        TaskService.AddNewTask("Testowy task");
+        // TaskService.AddNewTask("Testowy task");
         
-        TaskService.DeleteTask(2088704504);
-        
-        TaskService.ToggleTaskStatus(3);
+        TaskService.DeleteTask(6);
+        TaskService.DeleteTask(5);
+        TaskService.DeleteTask(4);
+        TaskService.DeleteTask(3);
     }
 }
