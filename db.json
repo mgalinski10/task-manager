@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Buy groceries", "status": false },
+  { "id": 2, "name": "Call mom", "status": false },
+  { "id": 3, "name": "Take out the trash", "status": false },
+  { "id": 4, "name": "Do the laundry", "status": false },
+  { "id": 5, "name": "Water the plants", "status": false },
+  { "id": 6, "name": "Read for 30 minutes", "status": false },
+  { "id": 7, "name": "Pay electricity bill", "status": false },
+  { "id": 8, "name": "Clean the bathroom", "status": false },
+  { "id": 9, "name": "Go for a walk", "status": false },
+  { "id": 10, "name": "Reply to emails", "status": false }
+]
