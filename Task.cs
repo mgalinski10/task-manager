@@ -13,8 +13,15 @@ public class Task
     [JsonPropertyName("status")]
     public bool Status { get; set; }
 
+    public Task(int id, string name, bool status)
+    {
+        Id = id;
+        Name = name;
+        Status = status;
+    }
+
     public override string ToString()
     {
-        return $"{Id}, Name: {Name}, Status: {Status}";
+        return $"Id: {Id}, Name: {Name}, Status: {Status}";
     }
 }
