@@ -10,19 +10,10 @@ public static class TaskService
     public static List<Task> GetAllTasks()
     {
         var jsonStringTasks = File.ReadAllLines(DATABASE_URL);
-        var result = new List<Task>();
+
+        var result = jsonStringTasks.Where(line => !IsFirstOrLastLine(line)).Select(line => line.Trim(CHARS_TO_TRIM))
+            .Select(line => JsonSerializer.Deserialize<Task>(line)).ToList();
         
-        foreach (var task in jsonStringTasks)
-        {
-            if (IsFirstOrLastLine(task))
-            {
-               continue;
-            }
-            
-            var serializedTask = JsonSerializer.Deserialize<Task>(task.Trim(CHARS_TO_TRIM));
-            result.Add(serializedTask); 
-        }
-    
         return result;
     }
 
